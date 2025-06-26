@@ -34,6 +34,7 @@ public class BoardServiceImpl implements BoardService {
 	
 	@Override
 	public BoardDTO detail(int idx) {
+		increase_hit(idx);
 		return boardDao.detail(idx);
 	}
 	
